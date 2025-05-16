@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cyber Sense</title>
 
-  <!-- Import Saira Stencil One from Google Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
 
   <style>
@@ -16,7 +16,6 @@
       height: 100%;
       overflow: hidden;
       font-family: 'Saira Stencil One', sans-serif;
-      
     }
 
     /* Background video */
@@ -38,6 +37,7 @@
       transform: translate(-50%, -50%);
       color: white;
       text-align: center;
+      padding: 0 20px;
     }
 
     .content h1 {
@@ -56,18 +56,28 @@
     }
 
     .content a {
-      color: #ffffff;
+      color: #2c79a2;
       font-size: 36px;
       text-decoration: none;
       background: rgba(0, 0, 0, 0.1);
       padding: 16px 32px;
       border-radius: 12px;
+      white-space: nowrap;
+      display: inline-block;
       transition: background 0.3s, transform 0.3s;
     }
 
     .content a:hover {
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.5);
       transform: scale(1.05);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      .content a {
+        font-size: 24px;
+        padding: 12px 20px;
+      }
     }
   </style>
 </head>
@@ -75,17 +85,18 @@
 
   <!-- Background video -->
   <video autoplay muted loop id="bgVideo">
-    <source src="C:\Users\M\OneDrive\Desktop\cybersense\pinterestdownloader.com-1747418970.732458.mp4" type="video/mp4">
+    <source src="pinterestdownloader.com-1747418970.732458.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
-  <!-- Centered content -->
+  <!-- Main content -->
   <div class="content">
     <h1>Cyber Sense</h1>
     <div class="tagline">"The Only Place Where Breaking Things Wins Prizes."</div>
-    <a href="https://forms.gle/9PCQ4rXsb2NQkTig6" target="_blank">Register Now</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSVZEYLbOI68I8e9RM-xRlQNr29RWL76r8XHEuNna0s6cl6Q/viewform" target="_blank">Register Now</a>
   </div>
 
 </body>
 </html>
 
+</html>
